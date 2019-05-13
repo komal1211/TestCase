@@ -17,14 +17,17 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://github.com/')
 
-WebUI.click(findTestObject('Object Repository/Github Object/Page_The worlds leading software de/a_Signin'))
+WebUI.click(findTestObject('Object Repository/Github Login Object/Page_The worlds leading software de/a_Signin'))
 
-WebUI.setText(findTestObject('Object Repository/Github Object/Page_Sign in to GitHub  GitHub/input_Username or email addres'), 
-    'dhjshjhsjdhjgdshjg')
+WebUI.setText(findTestObject('Object Repository/Github Login Object/Page_Sign in to GitHub  GitHub/input_Username or email addres'), 
+    'sumit')
 
-WebUI.click(findTestObject('Object Repository/Github Object/Page_Sign in to GitHub  GitHub/input_Forgot password_commit'))
+WebUI.setEncryptedText(findTestObject('Object Repository/Github Login Object/Page_Sign in to GitHub  GitHub/input_Forgot password_password'), 
+    'kGg6ALQHac0=')
 
-WebUI.click(findTestObject('Object Repository/Github Object/Page_Sign in to GitHub  GitHub/div_Incorrect username or pass'))
+WebUI.click(findTestObject('Object Repository/Github Login Object/Page_Sign in to GitHub  GitHub/input_Forgot password_commit'))
+
+WebUI.click(findTestObject('Object Repository/Github Login Object/Page_Sign in to GitHub  GitHub/div_Incorrect username or pass'))
 
 WebUI.closeBrowser()
 
